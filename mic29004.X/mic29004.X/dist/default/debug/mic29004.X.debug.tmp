@@ -6,7 +6,7 @@
   <DIR>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>aula3.ASM</SOURCE_FILE>
+ <SOURCE_FILE>AAfluxograma.ASM</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc/m328Pdef.inc</FILE>
  </INCLUDED_FILES>
@@ -14,14 +14,15 @@
   <FILE>dist/default/debug/mic29004.X.debug.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
-  <FILE>aula3.hex</FILE>
+  <FILE>AAfluxograma.hex</FILE>
  </HEX_FILES>
  <OUTPUT_FILES>
   <FILE>dist/default/debug/mic29004.X.debug.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>aula3.ASM</FILE><LINE>3</LINE></start>
-  <waitUM><FILE>aula3.ASM</FILE><LINE>5</LINE></waitUM>
-  <waitZERO><FILE>aula3.ASM</FILE><LINE>8</LINE></waitZERO>
+  <label><FILE>AAfluxograma.ASM</FILE><LINE>2</LINE></label>
+  <start><FILE>AAfluxograma.ASM</FILE><LINE>6</LINE></start>
+  <contador><FILE>AAfluxograma.ASM</FILE><LINE>11</LINE></contador>
+  <Wait10><FILE>AAfluxograma.ASM</FILE><LINE>18</LINE></Wait10>
  </LABELS>
 </ASSEMBLER_INFO>
