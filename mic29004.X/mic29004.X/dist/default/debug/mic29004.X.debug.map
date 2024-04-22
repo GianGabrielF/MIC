@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  AAfluxograma.ASM Wed Apr 17 17:28:25 2024
+AVRASM ver. 2.2.7  aula4.asm Mon Apr 22 14:55:19 2024
 
 
 EQU  SIGNATURE_000 0000001e
@@ -695,8 +695,7 @@ EQU  ACIaddr      0000002e
 EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
-CSEG label        00000000
-DEF  count        r17
+DSEG A            00000100
+DSEG B            00000101
 CSEG start        00000000
-CSEG contador     00000003
-CSEG Wait10       00000007
+CSEG Loop         00000002

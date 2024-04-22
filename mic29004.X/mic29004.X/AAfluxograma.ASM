@@ -17,6 +17,14 @@ contador:
     
 Wait10:
     ;"muda_estado_led"
+    sbis GPIOR0 7
+    rjmp led_on
+    
+    cbi GPIOR0 7
+    rjmp start
+
+led_on:
+    sbi GPIOR0 7
     
     
     rjmp start

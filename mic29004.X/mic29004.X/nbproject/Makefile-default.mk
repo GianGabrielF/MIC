@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=aula3.ASM AAfluxograma.ASM
+SOURCEFILES_QUOTED_IF_SPACED=aula4.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/aula3.o ${OBJECTDIR}/AAfluxograma.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/aula3.o.d ${OBJECTDIR}/AAfluxograma.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/aula4.obj
+POSSIBLE_DEPFILES=${OBJECTDIR}/aula4.obj.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/aula3.o ${OBJECTDIR}/AAfluxograma.o
+OBJECTFILES=${OBJECTDIR}/aula4.obj
 
 # Source Files
-SOURCEFILES=aula3.ASM AAfluxograma.ASM
+SOURCEFILES=aula4.asm
 
 # Pack Options 
 PACK_ASSEMBLER_OPTIONS=-I "${DFP_DIR}/avrasm/inc"  -i m328Pdef.inc
@@ -90,27 +90,17 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/aula3.o: aula3.ASM  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/aula4.obj: aula4.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} ${DISTDIR} 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/aula3.o 
-	${MP_AS}  -fI -W+ie ${PACK_ASSEMBLER_OPTIONS} -d ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -m ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.map  -S ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.tmp aula3.ASM
-${OBJECTDIR}/AAfluxograma.o: AAfluxograma.ASM  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} ${DISTDIR} 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/AAfluxograma.o 
-	${MP_AS}  -fI -W+ie ${PACK_ASSEMBLER_OPTIONS} -d ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -m ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.map  -S ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.tmp AAfluxograma.ASM
+	@${RM} ${OBJECTDIR}/aula4.obj 
+	${MP_AS}  -fI -W+ie ${PACK_ASSEMBLER_OPTIONS} -d ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -m ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.map  -S ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.tmp aula4.asm
 else
-${OBJECTDIR}/aula3.o: aula3.ASM  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/aula4.obj: aula4.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} ${DISTDIR} 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/aula3.o 
-	${MP_AS}  -fI -W+ie ${PACK_ASSEMBLER_OPTIONS} -d ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -S ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.tmp  -o ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.hex  -m ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.map  -l ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.lss aula3.ASM
-${OBJECTDIR}/AAfluxograma.o: AAfluxograma.ASM  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} ${DISTDIR} 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/AAfluxograma.o 
-	${MP_AS}  -fI -W+ie ${PACK_ASSEMBLER_OPTIONS} -d ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -S ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.tmp  -o ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.hex  -m ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.map  -l ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.lss AAfluxograma.ASM
+	@${RM} ${OBJECTDIR}/aula4.obj 
+	${MP_AS}  -fI -W+ie ${PACK_ASSEMBLER_OPTIONS} -d ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  -S ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.tmp  -o ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.hex  -m ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.map  -l ${DISTDIR}/mic29004.X.${IMAGE_TYPE}.lss aula4.asm
 endif
 
 # ------------------------------------------------------------------------------------
