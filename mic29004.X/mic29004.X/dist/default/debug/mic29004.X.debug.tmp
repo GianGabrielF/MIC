@@ -6,7 +6,7 @@
   <DIR>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>aula4.asm</SOURCE_FILE>
+ <SOURCE_FILE>delay.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc/m328Pdef.inc</FILE>
  </INCLUDED_FILES>
@@ -14,15 +14,15 @@
   <FILE>dist/default/debug/mic29004.X.debug.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
-  <FILE>aula4.hex</FILE>
+  <FILE>delay.hex</FILE>
  </HEX_FILES>
  <OUTPUT_FILES>
   <FILE>dist/default/debug/mic29004.X.debug.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <A><FILE>aula4.asm</FILE><LINE>3</LINE></A>
-  <B><FILE>aula4.asm</FILE><LINE>4</LINE></B>
-  <start><FILE>aula4.asm</FILE><LINE>7</LINE></start>
-  <Loop><FILE>aula4.asm</FILE><LINE>10</LINE></Loop>
+  <start><FILE>delay.asm</FILE><LINE>5</LINE></start>
+  <main><FILE>delay.asm</FILE><LINE>8</LINE></main>
+  <delay><FILE>delay.asm</FILE><LINE>15</LINE></delay>
+  <loop><FILE>delay.asm</FILE><LINE>17</LINE></loop>
  </LABELS>
 </ASSEMBLER_INFO>
