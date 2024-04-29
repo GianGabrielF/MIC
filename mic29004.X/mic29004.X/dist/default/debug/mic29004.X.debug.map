@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  exPilha.asm Mon Apr 29 14:24:00 2024
+AVRASM ver. 2.2.7  exEnderecamento.asm Mon Apr 29 20:33:45 2024
 
 
 EQU  SIGNATURE_000 0000001e
@@ -695,9 +695,10 @@ EQU  ACIaddr      0000002e
 EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
-DSEG A            00000100
-DSEG B            00000104
-DSEG C            00000108
+DSEG A1           00000100
+DSEG A2           0000010c
+DSEG A3           00000118
+DSEG A4           00000124
 CSEG start        00000000
-CSEG soma32       00000020
-CSEG LOOP_SOMA    00000027
+CSEG LOOP         00000005
+CSEG SOMA         00000011

@@ -1,5 +1,4 @@
 .INCLUDE <m328Pdef.inc>
-label:
     .DEF count=R17
     
     
