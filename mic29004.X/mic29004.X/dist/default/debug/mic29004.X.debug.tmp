@@ -6,7 +6,7 @@
   <DIR>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>delay.asm</SOURCE_FILE>
+ <SOURCE_FILE>exPilha.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc/m328Pdef.inc</FILE>
  </INCLUDED_FILES>
@@ -14,15 +14,17 @@
   <FILE>dist/default/debug/mic29004.X.debug.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
-  <FILE>delay.hex</FILE>
+  <FILE>exPilha.hex</FILE>
  </HEX_FILES>
  <OUTPUT_FILES>
   <FILE>dist/default/debug/mic29004.X.debug.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <start><FILE>delay.asm</FILE><LINE>5</LINE></start>
-  <main><FILE>delay.asm</FILE><LINE>8</LINE></main>
-  <delay><FILE>delay.asm</FILE><LINE>15</LINE></delay>
-  <loop><FILE>delay.asm</FILE><LINE>17</LINE></loop>
+  <A><FILE>exPilha.asm</FILE><LINE>3</LINE></A>
+  <B><FILE>exPilha.asm</FILE><LINE>4</LINE></B>
+  <C><FILE>exPilha.asm</FILE><LINE>5</LINE></C>
+  <start><FILE>exPilha.asm</FILE><LINE>9</LINE></start>
+  <soma32><FILE>exPilha.asm</FILE><LINE>62</LINE></soma32>
+  <LOOP_SOMA><FILE>exPilha.asm</FILE><LINE>73</LINE></LOOP_SOMA>
  </LABELS>
 </ASSEMBLER_INFO>

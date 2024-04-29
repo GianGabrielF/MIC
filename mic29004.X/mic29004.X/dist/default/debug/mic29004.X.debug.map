@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  delay.asm Wed Apr 24 17:02:59 2024
+AVRASM ver. 2.2.7  exPilha.asm Mon Apr 29 14:24:00 2024
 
 
 EQU  SIGNATURE_000 0000001e
@@ -695,8 +695,9 @@ EQU  ACIaddr      0000002e
 EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
-EQU  LED          00000005
+DSEG A            00000100
+DSEG B            00000104
+DSEG C            00000108
 CSEG start        00000000
-CSEG main         00000001
-CSEG delay        00000006
-CSEG loop         00000007
+CSEG soma32       00000020
+CSEG LOOP_SOMA    00000027
