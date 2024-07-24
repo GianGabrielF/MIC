@@ -3,29 +3,28 @@
  <DEVICE>"ATmega328P"</DEVICE>
  <WORKING_DIR>/home/aluno/MIC/mic29004.X/mic29004.X</WORKING_DIR>
  <INCLUDE_PATH>
-  <DIR>/opt/microchip/mplabx/v6.10/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc</DIR>
+  <DIR>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>exEnderecamento.asm</SOURCE_FILE>
+ <SOURCE_FILE>interruptor.asm</SOURCE_FILE>
  <INCLUDED_FILES>
-  <FILE>/opt/microchip/mplabx/v6.10/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc/m328Pdef.inc</FILE>
+  <FILE>/opt/microchip/mplabx/v6.15/packs/Microchip/ATmega_DFP/3.0.158/avrasm/inc/m328Pdef.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
   <FILE>dist/default/debug/mic29004.X.debug.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
-  <FILE>exEnderecamento.hex</FILE>
+  <FILE>interruptor.hex</FILE>
  </HEX_FILES>
  <OUTPUT_FILES>
   <FILE>dist/default/debug/mic29004.X.debug.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <A1><FILE>exEnderecamento.asm</FILE><LINE>3</LINE></A1>
-  <A2><FILE>exEnderecamento.asm</FILE><LINE>4</LINE></A2>
-  <A3><FILE>exEnderecamento.asm</FILE><LINE>5</LINE></A3>
-  <A4><FILE>exEnderecamento.asm</FILE><LINE>6</LINE></A4>
-  <start><FILE>exEnderecamento.asm</FILE><LINE>10</LINE></start>
-  <LOOP><FILE>exEnderecamento.asm</FILE><LINE>17</LINE></LOOP>
-  <SOMA><FILE>exEnderecamento.asm</FILE><LINE>33</LINE></SOMA>
+  <setup><FILE>interruptor.asm</FILE><LINE>22</LINE></setup>
+  <isr_int0><FILE>interruptor.asm</FILE><LINE>52</LINE></isr_int0>
+  <isr_int1><FILE>interruptor.asm</FILE><LINE>63</LINE></isr_int1>
+  <main><FILE>interruptor.asm</FILE><LINE>39</LINE></main>
+  <delay><FILE>interruptor.asm</FILE><LINE>77</LINE></delay>
+  <loop><FILE>interruptor.asm</FILE><LINE>86</LINE></loop>
  </LABELS>
 </ASSEMBLER_INFO>
