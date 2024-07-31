@@ -1,0 +1,12 @@
+slide: temporizador-contador_handout
+
+correção:
+
+Registradores: Configuração básica
+CS02 	CS01 	CS00
+  1	  1	  0  :clock externo no pino T0. Contagem na borda de descida*	
+  
+  
+Exemplo: Pisca led
+
+colocar LDI r16, 0 dps antes de sair do setup
